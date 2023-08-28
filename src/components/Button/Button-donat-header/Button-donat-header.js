@@ -1,23 +1,34 @@
 import './Button-donat-header.css';
 import React from 'react';
-
+import Modal from '../../Modal/Modal';
+import { useState } from 'react';
 
 const ButtonHeader = ({ onClick, children, href }) => {
-    const handleClick = (e) => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleClick = (e) => {
       e.preventDefault();
       if (href) {
-        window.open(href, '_blank', 'noopener noreferrer');
+          window.open(href, '_blank', 'noopener noreferrer');
       }
       if (onClick) {
-        onClick();
+          onClick();
       }
-    };
-  
-    return (
-      <button className="custom-button" onClick={handleClick}>
-        {children}
-      </button>
-    );
+      setModalOpen(true);
   };
-  
-  export default ButtonHeader;
+
+  const handleCloseModal = () => {
+      setModalOpen(false);
+  };
+
+  return (
+      <div>
+          <button className="custom-button" onClick={handleClick}>
+              {children}
+          </button>
+          {modalOpen && <Modal onClose={handleCloseModal} />}
+      </div>
+  );
+};
+
+export default ButtonHeader;

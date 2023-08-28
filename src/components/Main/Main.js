@@ -11,7 +11,6 @@ import Share from "../../pages/Share/Share";
 
 
 
-
 const Main = () =>{
 
 return(
@@ -23,6 +22,7 @@ return(
         <Projects/>
         <Partners/>
         <Share/>
+       
     </div>
 )
 
