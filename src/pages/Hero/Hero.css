@@ -1,0 +1,49 @@
+.Hero{
+    display: flex;
+    padding-top: 70px;
+    flex-direction: column;
+    align-items: center;
+    gap: 118px;
+    align-self: stretch;   
+}
+.Hero-text-content{
+   width: 100%;
+   height: auto;
+   display: flex;
+}
+.Hero-text{
+    align-self: stretch;
+    color:  #111;
+    text-align: center;
+}
+
+.Hero-text h1{  
+    font-family: e-Ukraine Head;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.Hero-line{
+    width: 711.535px;
+    height: 78.677px;
+    transform: rotate(-1.7deg);
+    margin-top: -370px;
+    margin-left: 620px;
+    position: absolute;
+    background: #9EB25D;
+    z-index: -1;
+}
+
+.Hero-scroll-container {
+    overflow: hidden;
+  }
+  
+
+  
+ 
+  
+  
+  
+  

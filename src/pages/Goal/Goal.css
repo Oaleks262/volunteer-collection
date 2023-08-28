@@ -1,0 +1,48 @@
+.Goal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    row-gap: 90px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+.Goal-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+.Goal-title h2{
+    width: 506px;
+    color: #111;
+    font-family: e-Ukraine Head;
+    font-size: 101px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.Goal-line{
+    width: 355px;
+    height: 86px;
+    transform: rotate(-1.7deg);
+    position: absolute;
+    margin-top: 200px;
+    z-index: -1;
+    background: #9EB25D;
+
+}
+.Goal-text{
+    display: flex;
+    text-align: start;
+    width: 562px;
+}
+.Goal-text p{
+    color: #111;
+    font-family: e-Ukraine Head;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 38px;
+}

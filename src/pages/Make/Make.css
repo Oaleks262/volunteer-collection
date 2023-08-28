@@ -1,0 +1,20 @@
+.Make{
+    display: flex;
+    padding: 80px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    align-self: stretch;
+    background: #9EB25D;
+}
+.Make h3{
+    width: 1055px;
+    color: #111;
+    text-align: center;
+    font-family: e-Ukraine Head;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+}

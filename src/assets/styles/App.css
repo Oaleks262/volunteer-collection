@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@font-face{
+  font-family: e-Ukrine Head;
+  src: url(../fonts/e-UkraineHead-Regular.otf) , url(../fonts/e-UkraineHead-Bold.otf) , url(../fonts/e-UkraineHead-Light.otf), url(../fonts/e-UkraineHead-LOGO.otf), url(../fonts/e-UkraineHead-Thin.otf), url(../fonts/e-UkraineHead-UltraLight.otf);
+}

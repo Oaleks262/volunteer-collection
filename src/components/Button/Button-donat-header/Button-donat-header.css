@@ -1,0 +1,49 @@
+.custom-button{
+    display: inline-flex;
+    width: 200px;
+    height: 25px;
+    padding: 21px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #111;
+    background: #111;
+    color: #FFF;
+    font-family: e-Ukraine Head;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.custom-button:hover{
+    border: 1px solid #9EB25D;
+    background:#9EB25D;
+}
+
+@media (max-width: 600px) {
+    .custom-button{
+        display: flex;
+        width: 347px;
+        padding: 21px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+        border: 1px solid #FFF;
+        background: #FFF;
+        color: #111;
+        font-family: e-Ukraine Head;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .custom-button:hover{
+     
+        border: 1px solid #9EB25D;
+        background: #9EB25D;
+        color: #FFF;
+    }
+}

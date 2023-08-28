@@ -1,0 +1,43 @@
+.Hero-scroll-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1340px; 
+    margin: 0 auto;
+}
+  
+.Hero-scroll-content {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+  
+.Hero-scroll-content img {
+    width: 100%;
+    height: auto;
+}
+
+.Hero-number{
+    right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+.scroll-button {
+    display: flex;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    align-items: center;
+}
+  
+.button-icon {
+    background-color: none;
+    padding: 5px; 
+    border-radius: none; 
+    box-shadow: none;
+}
+  
+  

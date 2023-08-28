@@ -1,0 +1,17 @@
+.custom-button-project{
+    display: flex;
+    width: 291px;
+    padding: 21px 32px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    border: 1px solid #111;
+    background: #FFF;
+    color: #111;
+    font-family: e-Ukraine Head;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
