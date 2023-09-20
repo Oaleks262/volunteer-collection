@@ -57,6 +57,7 @@
         flex-wrap: wrap;
     }
     .goal-title h2{
+        width: 100%;
         font-size: 38px;
         font-style: normal;
         font-weight: 200;
