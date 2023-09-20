@@ -8,3 +8,27 @@
   font-family: e-Ukrine Head;
   src: url(../fonts/e-UkraineHead-Regular.otf) , url(../fonts/e-UkraineHead-Bold.otf) , url(../fonts/e-UkraineHead-Light.otf), url(../fonts/e-UkraineHead-LOGO.otf), url(../fonts/e-UkraineHead-Thin.otf), url(../fonts/e-UkraineHead-UltraLight.otf);
 }
+.container {
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+  @media screen and (min-width: 480px) {
+    .container {
+      max-width: 480px;
+  }
+  }
+  @media screen and (min-width: 768px) {
+    .container { 
+      max-width: 768px;
+  }
+  }
+  @media screen and (min-width: 1280px) {
+    .container {
+     max-width: 1240px;
+     padding-left: 20px;
+     padding-right: 20px;
+    }
+  }

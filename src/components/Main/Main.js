@@ -15,6 +15,7 @@ const Main = () =>{
 
 return(
     <div className="Main">
+        <div className="container">
         <Hero/>
         <About/>
         <Goal/>
@@ -22,7 +23,7 @@ return(
         <Projects/>
         <Partners/>
         <Share/>
-       
+        </div>
     </div>
 )
 

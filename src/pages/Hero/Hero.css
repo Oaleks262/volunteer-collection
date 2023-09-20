@@ -26,11 +26,11 @@
     text-transform: uppercase;
 }
 .Hero-line{
-    width: 711.535px;
-    height: 78.677px;
+    max-width: 711.535px;
+    width: 80%;
+    height: 80.677px;
     transform: rotate(-1.7deg);
     margin-top: -370px;
-    margin-left: 620px;
     position: absolute;
     background: #9EB25D;
     z-index: -1;

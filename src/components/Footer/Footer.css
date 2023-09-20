@@ -34,7 +34,7 @@
     justify-content: space-between;
     align-items: flex-start;
 }
-.Footer-conteiner p {
+.Footer-conteiner a {
     color: #111;
     text-align: center;
     font-family: NAMU;
@@ -43,4 +43,5 @@
     font-weight: 800;
     line-height: 38px; /* 146.154% */
     text-decoration-line: underline;
+    cursor: pointer;
 }
