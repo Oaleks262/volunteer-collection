@@ -13,7 +13,7 @@ return(
     <div className="hero">
         <div className="hero-text-content">
             <div className="hero-text">
-                <h1>Привіт, ми проводимо збори для 57-ї бригади. Невеликі – але не менш важливі</h1>
+                <h1>Привіт, ми проводимо збори для 24-ї бригади. Великі – та дуже важливі</h1>
             </div>
         </div>
         <Scroll/>

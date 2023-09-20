@@ -26,17 +26,15 @@ const Share = () => {
     }
 
     return (
-        <div className="Share">
-            <div className="Share-title">
+        <div className="share">
+            <div className="share-title">
                 <h2>Допоможи<br/>
                     дізнатися<br/>
                     іншим про<br/>
                     цей збір
                 </h2>
-                <div className="Share-line">
-                </div>
             </div>
-            <div className="Share-button">
+            <div className="share-button">
                 <button onClick={shareOnFacebook}>Facebook<img src={iconbr} alt="Facebook Icon" /></button>
                 <button onClick={shareOnLinkedin}>Linkedin<img src={iconbr} alt="Linkedin Icon" /></button>
                 <button onClick={shareOnTelegram}>Telegram<img src={iconbr} alt="Telegram Icon" /></button>

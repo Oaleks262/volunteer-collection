@@ -6,6 +6,9 @@
     align-items: center;
     align-self: stretch;
 }
+.header-desktop img{
+    width: 250px;
+}
 .navbar{
     display: flex;
     align-items: center;
@@ -60,6 +63,9 @@
     }
     .header-mobile img{
         display: flex;
+    }
+    .header-mobile-img{
+        width: 100px;
     }
     .header-mobile button{
         background: none;

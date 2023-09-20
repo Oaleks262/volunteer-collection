@@ -26,28 +26,6 @@ const Projects = () => {
                         <a href="#">читати більше <img src={icontr}/></a>
                     </div>
                 </div>
-               <div className="pt1">
-               <div className="project-total-2">
-                    <img src={proect2}/>
-                    <div className="project-total-2-text">
-                        <p>
-                        Ми – 57 бригада та беремо участь у найзапекліших боях. Тому потреба в розхідних
-                        </p>
-                        <a href="#">читати більше <img src={icontr}/></a>
-                    </div>
-                </div>
-                <div className="project-total-3">
-                    <img src={proect3}/>
-                    <div className="project-total-3-text">
-                        <p>
-                        Ми – 57 бригада та беремо участь у найзапекліших боях. Тому потреба
-                        </p>
-                        <a href="#">читати більше <img src={icontr}/></a>
-                    </div>
-                </div>
-
-               </div>
-
             </div>
         </div>
     );
