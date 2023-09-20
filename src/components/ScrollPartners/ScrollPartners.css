@@ -8,7 +8,7 @@
 .partners-scroll-content {
     display: flex;
     transition: transform 0.5s ease;
-    gap: 20px;
+    gap: 290px;
 }
 
 .partners-scroll-content a {
@@ -22,7 +22,7 @@
 
 .partners-number {
     right: 0%;
-    display: none;
+    display: no;
     align-items: center;
     justify-content: start;
     gap: 16px;

@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import './ScrollPartners.css';
-import iconleft from '../../assets/images/icon-arrow-left.svg';
-import iconright from "../../assets/images/icon-arrow-righ.svg" // Виправлено помилку в імені файла
 import noname from '../../assets/images/desktop-image-2.png';
 
 class ScrollPartners extends Component {
@@ -9,16 +7,51 @@ class ScrollPartners extends Component {
         super(props);
         this.state = {
             currentIndex: 0,
+            isDragging: false,
+            dragStartX: 0,
+            dragDeltaX: 0,
         };
     }
 
-    prevsImage = () => { 
+    handleMouseDown = (event) => {
+        this.setState({
+            isDragging: true,
+            dragStartX: event.clientX || event.touches[0].clientX,
+        });
+    };
+
+    handleMouseMove = (event) => {
+        if (this.state.isDragging) {
+            const clientX = event.clientX || event.touches[0].clientX;
+            const dragDeltaX = clientX - this.state.dragStartX;
+            this.setState({ dragDeltaX });
+        }
+    };
+
+    handleMouseUp = () => {
+        if (this.state.isDragging) {
+            if (this.state.dragDeltaX > 50) {
+                // Прокручування вліво
+                this.prevImage();
+            } else if (this.state.dragDeltaX < -50) {
+                // Прокручування вправо
+                this.nextImage();
+            }
+            this.setState({
+                isDragging: false,
+                dragStartX: 0,
+                dragDeltaX: 0,
+            });
+        }
+    };
+
+    prevImage = () => { 
         this.setState((prevState) => ({
             currentIndex: (prevState.currentIndex - 1 + 4) % 4, 
         }));
     };
 
-    nexstImage = () => { 
+    nextImage = () => { 
         this.setState((prevState) => ({
             currentIndex: (prevState.currentIndex + 1) % 4, 
         }));
@@ -32,24 +65,16 @@ class ScrollPartners extends Component {
             noname
         ];
 
-        const PrevsButton = ({ onClick }) => (
-            <button onClick={onClick} className="scroll-button prev-button">
-                <img src={iconleft} alt="Previous" className="button-icon" />
-            </button>
-        );
-
-        const NextsButton = ({ onClick }) => (
-            <button onClick={onClick} className="scroll-button next-button">
-                <img src={iconright} alt="Next" className="button-icon" />
-            </button>
-        );
-
         return (
-            <div className="partners-scroll-container">
-                <div className="partners-number">
-                    <PrevsButton onClick={this.prevsImage} /> 
-                    <NextsButton onClick={this.nexstImage} /> 
-                </div>
+            <div
+                className="partners-scroll-container"
+                onMouseDown={this.handleMouseDown}
+                onMouseMove={this.handleMouseMove}
+                onMouseUp={this.handleMouseUp}
+                onTouchStart={this.handleMouseDown}
+                onTouchMove={this.handleMouseMove}
+                onTouchEnd={this.handleMouseUp}
+            >
                 <div className="partners-scroll-content" style={{ transform: `translateX(-${this.state.currentIndex * (100 / partner.length)}%)` }}>
                     {partner.map((image, index) => (
                         <a href="#" key={index}>
@@ -69,3 +94,4 @@ class ScrollPartners extends Component {
 }
 
 export default ScrollPartners;
+
