@@ -1,6 +1,7 @@
 .main{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 120px;
     align-self: stretch;
@@ -10,6 +11,7 @@
     .main{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         gap: 100px;
         align-self: stretch;
@@ -19,6 +21,7 @@
     .main{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         gap: 70px;
         align-self: stretch;

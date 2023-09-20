@@ -70,71 +70,6 @@
     font-weight: 200;
     line-height: 38px;
 }
-.project-total-2{
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    margin-bottom: 30px;
-}
-.project-total-2-text{
-    display: flex;
-    width: 312px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 113px;
-}
-.project-total-2-text p{
-    width: 325px;
-    color: #111;
-    font-family: e-Ukraine Head;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 38px;
-}
-.project-total-2-text a{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    color: #015BBB;
-    font-family: e-Ukraine Head;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 38px;
-}
-.project-total-3{
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-}
-.project-total-3-text{
-    display: flex;
-    width: 312px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 113px;
-}
-.project-total-3-text p{
-    width: 325px;
-    color: #111;
-    font-family: e-Ukraine Head;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 38px;
-}
-.project-total-3-text a{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    color: #015BBB;
-    font-family: e-Ukraine Head;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 38px;
-}
 
 @media (max-width: 1279px) {
     .projects{
@@ -149,11 +84,11 @@
         align-items: start;
     }
     .projects-title-text h2{  
-        font-size: 38px;
+        font-size: 25px;
         font-style: normal;
         font-weight: 200;
-        line-height: normal;
-        text-transform: uppercase;}
+        line-height: 38px;
+    }
     .projects-total{
         flex-direction: column;
     }
@@ -173,7 +108,15 @@
     .pt1{
         display: none;
     }
-
+    .project-total-1-text p{
+        align-self: stretch;
+        color: #111;
+        font-family: e-Ukraine Head;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 46px;
+    }
 
 
 

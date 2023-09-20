@@ -23,8 +23,9 @@
     color: #111;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1279px) {
     .custom-button-main{
+        width: 100%;
         display: inline-flex;
         padding: 21px 32px;
         justify-content: center;
@@ -34,15 +35,10 @@
         background: #111;
         color: #FFF;
         font-family: e-Ukraine Head;
-        font-size: 25px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
         text-transform: uppercase;
-    }
-    .custom-button-main:hover{
-        border: 1px solid #FFF;
-        background: #FFF;
-        color: #111;
     }
 }
