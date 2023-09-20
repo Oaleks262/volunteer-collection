@@ -1,4 +1,4 @@
-.About{
+.about{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -7,13 +7,13 @@
     align-self: stretch;
     flex-wrap: wrap;
 }
-.About-text{
+.about-text{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 59px;
 }
-.About-text-title{
+.about-text-title{
     display: flex;
     width: 521px;
     height: 300px;
@@ -21,7 +21,7 @@
     align-items: flex-start;
     text-align: start;
 }
-.About-text-title h2{
+.about-text-title h2{
     color: #111;
     font-family: e-Ukraine Head;
     font-size: 101px;
@@ -30,22 +30,13 @@
     line-height: normal;
     text-transform: uppercase;
 }
-.About-line{
-    width: 520.239px;
-    height: 86px;
-    transform: rotate(-1.7deg);
-    position: absolute;
-    margin-top: 200px;
-    z-index: -1;
-    background:#9EB25D;
-}
-.About-text-conteiner{
+.about-text-conteiner{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 31px;
 }
-.About-text-conteiner p{
+.about-text-conteiner p{
     width: 588px;
     color: #111;
     font-family: e-Ukraine Head;
@@ -55,7 +46,7 @@
     line-height: 38px;
     text-align: start;
 }
-.About-text-conteiner a{
+.about-text-conteiner a{
     color: #015BBB;
     font-family: e-Ukraine Head;
     font-size: 25px;
@@ -63,10 +54,10 @@
     font-weight: 200;
     line-height: 38px;
 }
-.About-text-conteiner a img{
+.about-text-conteiner a img{
     fill: #015BBB;
 }
-.About-content{
+.about-content{
     display: flex;
     width: 541px;
     height: 484px;
@@ -75,8 +66,63 @@
     justify-content: center;
     align-items: center;
 }
-.About-content img{
+.about-content-img{
     width: 541px;
     height: 380px;
     flex-shrink: 0;
+}
+@media (max-width: 1279px) {
+     .about{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-start;
+        row-gap: 90px;
+        align-self: stretch;
+        flex-wrap: wrap;
+     }
+     .about-text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        flex: 1 0 0;
+     }
+     .about-text-title{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        width: auto;
+        height: auto;
+     }
+     .about-text-title h2{
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        text-transform: uppercase;
+     }
+     .about-text-conteiner p{
+        align-self: stretch;
+        width: 100%;
+        font-family: e-Ukraine Head;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 38px; /* 152% */
+     }
+     .about-content{
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2px;
+    }
+    .about-content-img{
+        width: 100%;
+        height: auto;
+    }
 }

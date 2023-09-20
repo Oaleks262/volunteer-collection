@@ -8,21 +8,18 @@ import icontr from '../../assets/images/icon-arrow-tr.svg';
 const About = () =>{
 
 return(
-    <div className="About">
-        <div className="About-text">
-            <div className="About-text-title">
+    <div className="about">
+        <div className="about-text">
+            <div className="about-text-title">
                 <h2>Про <br/>Бригаду</h2>
-                <div className="About-line">
-
-                </div>
             </div>
-            <div className="About-text-conteiner">
+            <div className="about-text-conteiner">
                 <p>57 бригада бере участь у найзапекліших боях. Тому потреба в розхідних матеріалах просто вееелеетенська - це і рації, і ремонт машин, гума на колеса тощо</p>
                 <a href="#">читати більше <img src={icontr}/></a>
             </div>
         </div>
-        <div className="About-content">
-            <img src={flag} alt="Flag"/>
+        <div className="about-content">
+            <img className="about-content-img" src={flag} alt="Flag"/>
         </div>
     </div>
 

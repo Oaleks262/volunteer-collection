@@ -1,23 +1,23 @@
-.Projects{
+.projects{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 90px;
     align-self: stretch;
 }
-.Projects-title{
+.projects-title{
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
-.Projects-title-text{
+.projects-title-text{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: start;
 }
-.Projects-title-text h2{
+.projects-title-text h2{
     color: #111;
     font-family: e-Ukraine Head;
     font-size: 101px;
@@ -26,16 +26,7 @@
     line-height: normal;
     text-transform: uppercase;
 }
-.Projects-line{
-    width: 581px;
-    height: 86px;
-    transform: rotate(-1.7deg);
-    position: absolute;
-    margin-top: 200px;
-    background: #9EB25D;
-    z-index: -1;
-}
-.Projects-total{
+.projects-total{
     display: flex;
     align-items: flex-start;
     gap: 30px;
@@ -43,13 +34,13 @@
     align-self: stretch;
     text-align: start;
 }
-.Project-total-1{
+.project-total-1{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
 }
-.Project-total-1-text{
+.project-total-1-text{
     display: flex;
     width: 655px;
     height: 252px;
@@ -58,7 +49,7 @@
     align-items: flex-start;
     align-self: stretch;
 }
-.Project-total-1-text p{
+.project-total-1-text p{
     align-self: stretch;
     color: #111;
     font-family: e-Ukraine Head;
@@ -67,7 +58,7 @@
     font-weight: 200;
     line-height: 38px;
 }
-.Project-total-1-text a{
+.project-total-1-text a{
     display: flex;
     align-items: center;
     gap: 15px;
@@ -79,20 +70,20 @@
     font-weight: 200;
     line-height: 38px;
 }
-.Project-total-2{
+.project-total-2{
     display: flex;
     align-items: flex-start;
     gap: 30px;
     margin-bottom: 30px;
 }
-.Project-total-2-text{
+.project-total-2-text{
     display: flex;
     width: 312px;
     flex-direction: column;
     align-items: flex-start;
     gap: 113px;
 }
-.Project-total-2-text p{
+.project-total-2-text p{
     width: 325px;
     color: #111;
     font-family: e-Ukraine Head;
@@ -101,7 +92,7 @@
     font-weight: 200;
     line-height: 38px;
 }
-.Project-total-2-text a{
+.project-total-2-text a{
     display: flex;
     align-items: center;
     gap: 15px;
@@ -112,19 +103,19 @@
     font-weight: 200;
     line-height: 38px;
 }
-.Project-total-3{
+.project-total-3{
     display: flex;
     align-items: flex-start;
     gap: 30px;
 }
-.Project-total-3-text{
+.project-total-3-text{
     display: flex;
     width: 312px;
     flex-direction: column;
     align-items: flex-start;
     gap: 113px;
 }
-.Project-total-3-text p{
+.project-total-3-text p{
     width: 325px;
     color: #111;
     font-family: e-Ukraine Head;
@@ -133,7 +124,7 @@
     font-weight: 200;
     line-height: 38px;
 }
-.Project-total-3-text a{
+.project-total-3-text a{
     display: flex;
     align-items: center;
     gap: 15px;
@@ -144,3 +135,48 @@
     font-weight: 200;
     line-height: 38px;
 }
+
+@media (max-width: 1279px) {
+    .projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        align-self: stretch;
+    }
+    .projects-title{
+        flex-direction: column;
+        align-items: start;
+    }
+    .projects-title-text h2{  
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        text-transform: uppercase;}
+    .projects-total{
+        flex-direction: column;
+    }
+    .project-total-1-img{
+        width: 100%;
+        height: auto;
+    }
+    .project-total-1-text{
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: stretch;
+    }
+    .pt1{
+        display: none;
+    }
+
+
+
+
+
+
+    }

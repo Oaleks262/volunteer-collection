@@ -54,13 +54,13 @@ class Scroll extends Component {
   
       return (
         
-        <div className="Hero-scroll-container">
-            <div className="Hero-number">
+        <div className="hero-scroll-container">
+            <div className="hero-number">
                 {`${formattedIndex} - ${totalImages}`}
                 <PrevButton onClick={this.prevImage} />
                 <NextButton onClick={this.nextImage} />
             </div>
-          <div className="Hero-scroll-content" style={{ transform: `translateX(-${this.state.currentIndex * 100}%)` }}>
+          <div className="hero-scroll-content" style={{ transform: `translateX(-${this.state.currentIndex * 100}%)` }}>
             {images.map((image, index) => (
               <img key={index} src={image} alt={`Image ${index + 1}`} />
             ))}

@@ -14,7 +14,7 @@ import Share from "../../pages/Share/Share";
 const Main = () =>{
 
 return(
-    <div className="Main">
+    <div className="main">
         <div className="container">
         <Hero/>
         <About/>

@@ -1,4 +1,4 @@
-.Goal{
+.goal{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,13 +7,13 @@
     align-self: stretch;
     flex-wrap: wrap;
 }
-.Goal-title{
+.goal-title{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: start;
 }
-.Goal-title h2{
+.goal-title h2{
     width: 506px;
     color: #111;
     font-family: e-Ukraine Head;
@@ -23,7 +23,7 @@
     line-height: normal;
     text-transform: uppercase;
 }
-.Goal-line{
+.goal-line{
     width: 355px;
     height: 86px;
     transform: rotate(-1.7deg);
@@ -33,16 +33,47 @@
     background: #9EB25D;
 
 }
-.Goal-text{
+.goal-text{
     display: flex;
     text-align: start;
     width: 562px;
 }
-.Goal-text p{
+.goal-text p{
     color: #111;
     font-family: e-Ukraine Head;
     font-size: 25px;
     font-style: normal;
     font-weight: 200;
     line-height: 38px;
+}
+@media (max-width: 1279px) {
+    .goal{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-start;
+        row-gap: 60px;
+        align-self: stretch;
+        flex-wrap: wrap;
+    }
+    .goal-title h2{
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .goal-text{
+        display: flex;
+        text-align: start;
+        width: 100%;
+        
+    }
+    .goal-text p{
+        flex: 1 0 0;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 38px; /* 152% */
+    }
 }

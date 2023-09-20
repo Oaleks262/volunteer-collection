@@ -1,4 +1,4 @@
-.Hero-scroll-container {
+.hero-scroll-container {
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -6,17 +6,17 @@
     margin: 0 auto;
 }
   
-.Hero-scroll-content {
+.hero-scroll-content {
     display: flex;
     transition: transform 0.5s ease;
 }
   
-.Hero-scroll-content img {
+.hero-scroll-content img {
     width: 100%;
     height: auto;
 }
 
-.Hero-number{
+.hero-number{
     right: 0%;
     display: flex;
     align-items: center;

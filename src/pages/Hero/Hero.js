@@ -10,13 +10,10 @@ const Hero = () => {
   
     
 return(
-    <div className="Hero">
-        <div className="Hero-text-content">
-            <div className="Hero-text">
+    <div className="hero">
+        <div className="hero-text-content">
+            <div className="hero-text">
                 <h1>Привіт, ми проводимо збори для 57-ї бригади. Невеликі – але не менш важливі</h1>
-                <div className="Hero-line">
-                    
-                    </div>
             </div>
         </div>
         <Scroll/>

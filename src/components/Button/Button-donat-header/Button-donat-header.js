@@ -7,7 +7,6 @@ const ButtonHeader = ({ onClick, children, href }) => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const handleClick = (e) => {
-      e.preventDefault();
       if (href) {
           window.open(href, '_blank', 'noopener noreferrer');
       }

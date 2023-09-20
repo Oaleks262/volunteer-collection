@@ -1,4 +1,4 @@
-.Hero{
+.hero{
     display: flex;
     padding-top: 70px;
     flex-direction: column;
@@ -6,41 +6,53 @@
     gap: 118px;
     align-self: stretch;   
 }
-.Hero-text-content{
+.hero-text-content{
    width: 100%;
    height: auto;
    display: flex;
 }
-.Hero-text{
+.hero-text{
     align-self: stretch;
     color:  #111;
     text-align: center;
 }
 
-.Hero-text h1{  
-    font-family: e-Ukraine Head;
+.hero-text h1{  
+  font-family: e-Ukraine Head;
     font-size: 90px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
 }
-.Hero-line{
-    max-width: 711.535px;
-    width: 80%;
-    height: 80.677px;
-    transform: rotate(-1.7deg);
-    margin-top: -370px;
-    position: absolute;
-    background: #9EB25D;
-    z-index: -1;
-}
 
-.Hero-scroll-container {
+
+.hero-scroll-container {
     overflow: hidden;
   }
   
-
+  @media (max-width: 1279px) {
+    .hero{
+        display: flex;
+        padding-top: 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 29px;
+        align-self: stretch;
+    }
+    .hero-text h1{  
+        text-align: center;
+        font-family: e-Ukraine Head;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .hero-line{
+        height: 33px;
+    }
+}
   
  
   
