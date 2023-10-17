@@ -42,7 +42,7 @@
   @media (max-width: 1279px) {
     .hero{
         display: flex;
-        max-width: 100%;
+        max-width: 758px;
     }
     .hero-text h1{  
         text-align: center;

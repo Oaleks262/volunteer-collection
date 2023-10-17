@@ -60,9 +60,14 @@
     fill: #111;
 }
 @media (max-width: 1279px) {
+    .share{
+        display: flex;
+        width: 100%;
+        max-width: 758px;
+    }
     .share-block{
         display: flex;
-        max-width: 100%;
+        width: 100%;
         flex-direction: column;
         align-items: flex-start;
         gap: 70px;

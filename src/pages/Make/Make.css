@@ -23,6 +23,11 @@
 }
 
 @media (max-width: 1279px) {
+    .make-div{
+        display: flex;
+        max-width: 758px;
+        width: 100%;
+    }
     .make{
         display: flex;
         padding: 49px 10px;

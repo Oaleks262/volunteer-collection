@@ -1,6 +1,6 @@
 .about{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
     row-gap: 90px;

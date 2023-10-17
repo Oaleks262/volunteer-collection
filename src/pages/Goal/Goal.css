@@ -1,8 +1,8 @@
 .goal{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
     row-gap: 90px;
     align-self: stretch;
     flex-wrap: wrap;
@@ -65,12 +65,16 @@
     .goal-cont{
         display: flex;
         width: 100%;
+        max-width: 758px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    .goal-title h2{
+    .goal-title{
         width: 100%;
+    }
+    .goal-title h2{
+
         font-size: 38px;
         font-style: normal;
         font-weight: 200;
