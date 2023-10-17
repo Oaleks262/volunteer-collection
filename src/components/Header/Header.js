@@ -13,6 +13,7 @@ const [menu , setMenu] = useState(false);
 
 return( 
   <div className="header">
+    <div className="container">
     <div className="header-desktop">
       <img src={logo} alt="logo" />
       <div className="navbar">
@@ -29,6 +30,7 @@ return(
       <img src={logo} alt="logo" className="header-mobile-img"/>
 
       <button><img src={menulogo} alt="logo"/></button>
+    </div>
     </div>
     </div>
 );

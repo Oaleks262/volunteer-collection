@@ -1,6 +1,6 @@
 .custom-button-project{
     display: flex;
-    width: 291px;
+    max-width: 291px;
     padding: 21px 32px;
     justify-content: space-between;
     align-items: center;

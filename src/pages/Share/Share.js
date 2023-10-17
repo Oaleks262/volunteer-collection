@@ -27,6 +27,8 @@ const Share = () => {
 
     return (
         <div className="share">
+            <div className="container ">
+                <div className="share-block">
             <div className="share-title">
                 <h2>Допоможи<br/>
                     дізнатися<br/>
@@ -40,7 +42,9 @@ const Share = () => {
                 <button onClick={shareOnTelegram}>Telegram<img src={iconbr} alt="Telegram Icon" /></button>
                 <button onClick={shareOnViber}>Viber<img src={iconbr} alt="Viber Icon" /></button>
             </div>
+            </div>
         </div>
+    </div>
     )
 }
 

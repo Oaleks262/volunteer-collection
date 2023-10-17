@@ -1,3 +1,6 @@
+.make-div{
+    display: flex;
+}
 .make{
     display: flex;
     padding: 80px 0px;
