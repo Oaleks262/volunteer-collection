@@ -23,6 +23,7 @@
     width: 100%;
     flex-direction: column;
     justify-content: center;
+    gap: 25px;
 }
 .burger-nav{
     display: flex;

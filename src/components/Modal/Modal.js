@@ -17,10 +17,10 @@ const Modal = ({ onClose }) =>{
         <div className="Modal" onClick={handleModalClick}>
             <div className="Modal-window">
                 <div className="Modal-button">
-                    <button className="Button-close" onClick={handleButtonCloseClick}><img src={close} alt="Close"/></button>
+                    <button className="Button-close" onClick={handleButtonCloseClick}><img src={close} alt="Close"className="icon-close"/></button>
                 </div>    
                 <div className="Modal-text">
-                    <h2>Дякуємо за ваш внесок у підтримку 57-ї бригади!</h2>
+                    <h2>Дякуємо за ваш внесок у підтримку 24-ї бригади!</h2>
                     <h2>Разом до перемоги!</h2>
                 </div>
             </div>

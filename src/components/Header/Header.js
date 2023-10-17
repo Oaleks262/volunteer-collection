@@ -17,7 +17,7 @@ const Header = () => {
     <div className="header">
       <div className="container">
         <div className="header-desktop">
-          <img src={logo} alt="logo" />
+          <img className="header-desktop-img" src={logo} alt="logo" />
           <div className="navbar">
             <div className="nav">
             <a href="#" >Про бригаду</a>
