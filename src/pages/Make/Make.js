@@ -10,7 +10,7 @@ const Make = () => {
             <div className="container">
                 <div className="make">
             <h3>Ваш внесок - крок до сильнішої оборони. Допоможіть нам будувати мирне завтра для всіх разом з 24-ю бригадою.</h3>
-            <ButtonMake href={'https://send.monobank.ua/jar/4B1mQWmGVS'}>Зробити донат</ButtonMake>
+            <ButtonMake href={'https://send.monobank.ua/jar/997DGaGRnq'}>Зробити донат</ButtonMake>
             </div>
             </div>
         </div>

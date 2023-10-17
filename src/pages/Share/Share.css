@@ -36,7 +36,7 @@
 .share-button button{
     display: flex;
     width: 443px;
-    height: 165px;
+    height: auto;
     padding: 80px 10px;
     align-items: center;
     gap: 10px;
@@ -52,6 +52,7 @@
     line-height: 85px;
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .share-button img{
     width: 25px;

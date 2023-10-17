@@ -22,7 +22,7 @@ return(
           <a href="#" >наші проекти</a>
         </div>
         <div className="button-header">
-          <ButtonHeader href={'https://send.monobank.ua/jar/4B1mQWmGVS'}>Зробити донат</ButtonHeader>
+          <ButtonHeader href={'https://send.monobank.ua/jar/997DGaGRnq'}>Зробити донат</ButtonHeader>
         </div>
       </div>
     </div>
