@@ -10,7 +10,8 @@
 .about-cont{
     display: flex;
     width: 100%;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .about-text{
     display: flex;
@@ -86,6 +87,11 @@
         align-self: stretch;
         flex-wrap: wrap;
      }
+     .about-cont{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+     }
      .about-text{
         display: flex;
         flex-direction: column;
@@ -120,6 +126,7 @@
      .about-content{
         display: flex;
         width: 100%;
+        max-width: 758px;
         height: auto;
         flex-direction: column;
         justify-content: center;
