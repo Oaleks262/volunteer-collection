@@ -1,6 +1,6 @@
 import axios from "axios";
 // axios.defaults.baseURL = import.meta.env.VITE_API_URL;
-axios.defaults.baseURL = "http://http://localhost:4444";
+axios.defaults.baseURL = "https://stormy-beach-88865-2af5e7ffc18c.herokuapp.com/";
 
 
 export const lendingData = {
