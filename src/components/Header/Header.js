@@ -37,7 +37,7 @@ const Header = () => {
           <img className="header-desktop-img" src={logo} alt="logo" />
           <div className="navbar">
             <div className="nav">
-            <a href="#" >Про бригаду</a>
+            <a href="tel:+380938145293">Контакти</a>
               <a href="https://t.me/+HCcTIiF8PR1jZjBi" >Наш telegram</a>
             </div>
             <div className="button-header">
