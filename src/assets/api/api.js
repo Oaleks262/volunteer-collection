@@ -18,8 +18,10 @@ export const lendingData = {
 
 export const AdminApi = {
     setToken(token) {
-       axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
-    },
+        axios.defaults.headers.common["Authorization"] = `${token}`;
+        localStorage.setItem('authToken', token);
+        return token;
+      },
     loginAdmin(body) {
        return axios.post("/auth/login", body);
     },
