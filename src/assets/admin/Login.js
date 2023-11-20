@@ -61,7 +61,7 @@ const Login = () => {
           />
         </div>
         <button className='loginbutton' type="submit" disabled={loading}>
-          {loading ? 'Logging in...' : 'Вхід'} 
+          {loading ? 'Завантаження' : 'Вхід'} 
         </button>
       </form>
       {error && <div style={{ color: 'red' }}>{error.message}</div>}
