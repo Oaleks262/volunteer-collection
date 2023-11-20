@@ -1,5 +1,4 @@
 import React, { useContext, useState, useEffect } from 'react';
-import axios from 'axios';
 import { AuthContext } from './AuthContext';
 import { AdminApi } from '../api/api.js';
 
@@ -21,7 +20,6 @@ const Admin = () => {
         const token = localStorage.getItem('authToken');
         AdminApi.setToken(token);
           const response = await AdminApi.getAdminBank();
-          console.log(response.data);
           setBankAdmin(response?.data?.bank || "Default Title");
       } catch (error) {
           console.error("Error fetching title:", error);
@@ -37,7 +35,6 @@ useEffect(() => {
       const token = localStorage.getItem('authToken');
       AdminApi.setToken(token);
         const response = await AdminApi.getAdminTitle();
-        console.log(response.data);
         setTitleAdmin(response?.data?.title || "Default Title");
     } catch (error) {
         console.error("Error fetching title:", error);
@@ -53,7 +50,6 @@ useEffect(() => {
       const token = localStorage.getItem('authToken');
       AdminApi.setToken(token);
         const response = await AdminApi.getAdminAbout();
-        console.log(response.data);
         setAboutAdmin(response?.data?.about || "Default Title");
     } catch (error) {
         console.error("Error fetching title:", error);
@@ -67,17 +63,35 @@ useEffect(() => {
 
 
 
-  const handleSaveTitle = () => {
-    AdminApi.putAdminTitle({ title: editedTitle });
-  };
+const handleSaveTitle = async () => {
+  try {
+    console.log(editedTitle)
+    await AdminApi.putAdminTitle({ title: editedTitle });
+  } catch (error) {
+    console.error("Error saving title:", error);
+    // Обробте помилку
+  }
+};
 
-  const handleSaveAbout = () => {
-    AdminApi.putAdminAbout({ about: editedAbout });
-  };
+const handleSaveAbout = async () => {
+  try {
+    await AdminApi.putAdminAbout({ about: editedAbout });
+    setAboutAdmin(editedAbout); // Оновити стан aboutAdmin
+  } catch (error) {
+    console.error("Error saving about:", error);
+    // Обробте помилку
+  }
+};
 
-  const handleSaveBank = () => {
-    AdminApi.putAdminBank({ bank: editedBank });
-  };
+const handleSaveBank = async () => {
+  try {
+    await AdminApi.putAdminBank({ bank: editedBank });
+    setBankAdmin(editedBank); // Оновити стан bankAdmin
+  } catch (error) {
+    console.error("Error saving bank:", error);
+    // Обробте помилку
+  }
+};
 
   return (
     <div>
@@ -118,5 +132,7 @@ useEffect(() => {
     </div>
   );
 };
+
+
 
 export default Admin;

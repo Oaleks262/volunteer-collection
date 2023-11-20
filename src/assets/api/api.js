@@ -37,11 +37,11 @@ export const AdminApi = {
     getAdminAbout(){
         return axios.get("/admin/about");
     },
-    putAdminBank(body){
-        return axios.put("/admin/bank", body);
+    putAdminBank({body}){
+        return axios.put("/admin/bank", `${body}`);
     },
     putAdminTitle(body){
-        return axios.put("/admin/title", body);
+        return axios.put("/admin/title",body);
     },
     putAdminAbout(body){
         return axios.put ("/admin/about", body);
