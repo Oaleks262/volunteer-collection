@@ -1,6 +1,6 @@
 import axios from "axios";
-// axios.defaults.baseURL = import.meta.env.VITE_API_URL;
-axios.defaults.baseURL = "https://stormy-beach-88865-2af5e7ffc18c.herokuapp.com/";
+
+axios.defaults.baseURL = "https://volunteer-collection-api.onrender.com/";
 
 
 export const lendingData = {
@@ -14,6 +14,7 @@ export const lendingData = {
        return axios.get("bank");
     }
 };
+
 
 export const AdminApi = {
     setToken(token) {
@@ -43,5 +44,5 @@ export const AdminApi = {
     putAdminAbout(body){
         return axios.put ("/admin/about", body);
     }
-
 }
+export default { lendingData, AdminApi };
