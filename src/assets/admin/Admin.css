@@ -14,6 +14,7 @@
     width: 50%;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
 }
 .admin-title{
     display: flex;
@@ -25,9 +26,62 @@
 .admin-title strong{
     color: #3e9723;
 }
-.admin-contein p{
+.admin-title p{
     width: 70%;
     height: auto;
     border: 1px solid #3e9723;
-    
+}
+.admin-title input{
+    width: 70%;
+}
+.save{
+    width: 35%;
+    color: #fff;
+    background-color: #3e9723;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.logout{
+    width: 35%;
+    color: #fff;
+    background-color: rgb(187, 29, 29);
+    border-radius: 8px;
+    font-size: 20px;
+}
+.admin-bank{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.admin-bank strong{
+    color: #3e9723;
+}
+.admin-bank p{
+    width: 70%;
+    height: auto;
+    border: 1px solid #3e9723;
+    overflow: hidden;
+}
+.admin-bank input{
+    width: 70%;
+}
+.admin-about{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.admin-about strong{
+    color: #3e9723;
+}
+.admin-about p{
+    width: 70%;
+    height: auto;
+    border: 1px solid #3e9723;
+}
+.admin-about input{
+    width: 70%;
 }
