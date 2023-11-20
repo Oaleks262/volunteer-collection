@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { AuthContext } from './AuthContext';
 import { Navigate } from 'react-router-dom';
 import { AdminApi } from '../api/api.js';
+import "./Admin.css";
 
 const Admin = () => {
 
@@ -32,10 +33,10 @@ const Admin = () => {
         const token = localStorage.getItem('authToken');
         AdminApi.setToken(token);
           const response = await AdminApi.getAdminBank();
-          setBankAdmin(response?.data?.bank || "Default Title");
+          setBankAdmin(response?.data?.bank || "Default Bank");
       } catch (error) {
           console.error("Error fetching title:", error);
-          setBankAdmin("Default Title");
+          setBankAdmin("Default Bank");
       }
   };
 
@@ -62,10 +63,10 @@ useEffect(() => {
       const token = localStorage.getItem('authToken');
       AdminApi.setToken(token);
         const response = await AdminApi.getAdminAbout();
-        setAboutAdmin(response?.data?.about || "Default Title");
+        setAboutAdmin(response?.data?.about || "Default About");
     } catch (error) {
         console.error("Error fetching title:", error);
-        setAboutAdmin("Default Title");
+        setAboutAdmin("Default About");
     }
 };
 
@@ -79,18 +80,12 @@ const handleSaveTitle = async () => {
   try {
     const token = localStorage.getItem('authToken');
     AdminApi.setToken(token);
-    // Отримати дані для titleAdmin
     const response = await AdminApi.getAdminTitle();
     const titleData = response?.data;
-
-    // Перевірити, чи є ідентифікатор в titleData
     const titleId = titleData?._id;
-
+    console.log(titleId)
     if (titleId) {
-      // Видалити title за ідентифікатором
       await AdminApi.deleteAdminTitle(titleId);
-
-      // Перевірити, чи існує відредагований title та зберегти його
       if (editedTitle) {
         await AdminApi.putAdminTitle({ title: editedTitle });
         setTitleAdmin(editedTitle);
@@ -106,20 +101,14 @@ const handleSaveTitle = async () => {
 
 const handleSaveAbout = async () => {
   try {
-    // Отримати дані для aboutAdmin
     const token = localStorage.getItem('authToken');
     AdminApi.setToken(token);
     const response = await AdminApi.getAdminAbout();
     const aboutData = response?.data;
-
-    // Перевірити, чи є ідентифікатор в aboutData
     const aboutId = aboutData?._id;
     console.log(aboutId);
     if (aboutId) {
-      // Видалити about за ідентифікатором
       await AdminApi.deleteAdminAbout(aboutId);
-
-      // Перевірити, чи існує відредагований about та зберегти його
       if (editedAbout) {
         await AdminApi.putAdminAbout({ about: editedAbout });
         setAboutAdmin(editedAbout);
@@ -134,20 +123,15 @@ const handleSaveAbout = async () => {
 
 const handleSaveBank = async () => {
   try {
+    
     const token = localStorage.getItem('authToken');
     AdminApi.setToken(token);
-    // Отримати дані для bankAdmin
     const response = await AdminApi.getAdminBank();
     const bankData = response?.data;
-
-    // Перевірити, чи є ідентифікатор в bankData
     const bankId = bankData?._id;
-
+    console.log(bankId)
     if (bankId) {
-      // Видалити bank за ідентифікатором
       await AdminApi.deleteAdminBank(bankId);
-
-      // Перевірити, чи існує відредагований bank та зберегти його
       if (editedBank) {
         await AdminApi.putAdminBank({ bank: editedBank });
         setBankAdmin(editedBank);
@@ -165,10 +149,10 @@ if (!isAuthenticated) {
 }
 
   return (
-    <div>
-      <h2>Admin Page</h2>
-        <div>
-          <div>
+    <div className='admin-contein'>
+      <h2>Адмін панель</h2>
+        <div className='admin-input'>
+          <div className='admin-title'>
             <strong>Title:</strong>
             <p>{titleAdmin}</p>
             <input
@@ -176,9 +160,9 @@ if (!isAuthenticated) {
               value={editedTitle}
               onChange={(e) => setEditedTitle(e.target.value)}
             />
-            <button onClick={handleSaveTitle}>Save</button>
+            <button className='save' onClick={handleSaveTitle}>Зберегти</button>
           </div>
-          <div>
+          <div className='admin-about'>
             <strong>About:</strong>
             <p>{aboutAdmin}</p>
             <input
@@ -186,9 +170,9 @@ if (!isAuthenticated) {
               value={editedAbout}
               onChange={(e) => setEditedAbout(e.target.value)}
             />
-            <button onClick={handleSaveAbout}>Save</button>
+            <button className='save' onClick={handleSaveAbout}>Зберегти</button>
           </div>
-          <div>
+          <div className='admin-bank'>
             <strong>Bank:</strong>
             <p>{bankAdmin}</p>
             <input
@@ -196,10 +180,11 @@ if (!isAuthenticated) {
               value={editedBank}
               onChange={(e) => setEditedBank(e.target.value)}
             />
-            <button onClick={handleSaveBank}>Save</button>
+            <button className='save' onClick={handleSaveBank}>Зберегти</button>
           </div>
+          <button className='logout' onClick={handleLogout}>Вихід</button>
         </div>
-        <button onClick={handleLogout}>Logout</button>
+        
     </div>
   );
 };

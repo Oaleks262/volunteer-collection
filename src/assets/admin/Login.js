@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import { Navigate } from 'react-router-dom';
 import { AuthContext } from './AuthContext';
 import { AdminApi } from "../api/api";
+import "./Login.css";
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -40,10 +41,10 @@ const Login = () => {
   }
 
   return (
-    <div>
-      <h2>Login</h2>
+    <div className='login'>
+      <h2>Вхід</h2>
       <form onSubmit={handleLogin}>
-        <div>
+        <div className='labelemail'>
           <label>Email:</label>
           <input
             type="email"
@@ -51,7 +52,7 @@ const Login = () => {
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        <div>
+        <div className='labelpassword'>
           <label>Password:</label>
           <input
             type="password"
@@ -59,8 +60,8 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit" disabled={loading}>
-          {loading ? 'Logging in...' : 'Login'}
+        <button className='loginbutton' type="submit" disabled={loading}>
+          {loading ? 'Logging in...' : 'Вхід'} 
         </button>
       </form>
       {error && <div style={{ color: 'red' }}>{error.message}</div>}

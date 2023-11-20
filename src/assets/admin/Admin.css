@@ -1,0 +1,33 @@
+.admin-contein{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.admin-contein h2{
+    font-size: 44px;
+    color: #2d6f17;
+}
+.admin-input{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 20px;
+}
+.admin-title{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.admin-title strong{
+    color: #3e9723;
+}
+.admin-contein p{
+    width: 70%;
+    height: auto;
+    border: 1px solid #3e9723;
+    
+}
