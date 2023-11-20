@@ -45,6 +45,15 @@ export const AdminApi = {
     },
     putAdminAbout(body){
         return axios.put ("/admin/about", body);
+    },
+    deleteAdminBank(bankId) {
+        return axios.delete(`/admin/bank/${bankId}`);
+    },
+    deleteAdminTitle(titleId) {
+        return axios.delete(`/admin/title/${titleId}`);
+    },
+    deleteAdminAbout(aboutId) {
+        return axios.delete(`/admin/title/${aboutId}`);
     }
 }
 export default { lendingData, AdminApi };

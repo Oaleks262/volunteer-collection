@@ -65,31 +65,49 @@ useEffect(() => {
 
 const handleSaveTitle = async () => {
   try {
-    console.log(editedTitle)
-    await AdminApi.putAdminTitle({ title: editedTitle });
+      // Отримуємо ідентифікатор (id) поточного titleAdmin
+      const titleId = titleAdmin?._id;
+
+      // Видаляємо існуючий title за його id
+      if (titleId) {
+          await AdminApi.deleteAdminTitle(titleId);
+      }
+
+      // Відправляємо запит на створення нового title
+      const response = await AdminApi.putAdminTitle({ title: editedTitle });
+
+      // Оновлюємо стан titleAdmin з новим title
+      setTitleAdmin(response?.data?.title || "Default Title");
   } catch (error) {
-    console.error("Error saving title:", error);
-    // Обробте помилку
+      console.error("Error saving title:", error);
+      // Додатково: вивести повідомлення про помилку
   }
 };
 
+
 const handleSaveAbout = async () => {
   try {
+    const aboutId = aboutAdmin?._id;
+    if (aboutId) {
+      await AdminApi.deleteAdminAbout(aboutId);
+    }
     await AdminApi.putAdminAbout({ about: editedAbout });
-    setAboutAdmin(editedAbout); // Оновити стан aboutAdmin
+    setAboutAdmin(editedAbout);
   } catch (error) {
     console.error("Error saving about:", error);
-    // Обробте помилку
   }
 };
 
 const handleSaveBank = async () => {
   try {
+    const bankId = bankAdmin?._id;
+    if (bankId) {
+      await AdminApi.deleteAdminBank(bankId);
+    }
     await AdminApi.putAdminBank({ bank: editedBank });
-    setBankAdmin(editedBank); // Оновити стан bankAdmin
+    setBankAdmin(editedBank);
   } catch (error) {
     console.error("Error saving bank:", error);
-    // Обробте помилку
   }
 };
 
