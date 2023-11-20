@@ -20,8 +20,11 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
     align-items: center;
     justify-content: center;
+    border: 1px solid #2d6f17;
+    padding: 5px;
 }
 .admin-title strong{
     color: #3e9723;
@@ -52,14 +55,17 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
     align-items: center;
     justify-content: center;
+    border: 1px solid #2d6f17;
+    padding: 5px;
 }
 .admin-bank strong{
     color: #3e9723;
 }
 .admin-bank p{
-    width: 100%;
+    width: 70%;
     height: auto;
     border: 1px solid #3e9723;
     overflow: hidden;
@@ -70,9 +76,12 @@
 .admin-about{
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 20px;
     align-items: center;
     justify-content: center;
+    border: 1px solid #2d6f17;
+    padding: 5px;
 }
 .admin-about strong{
     color: #3e9723;
