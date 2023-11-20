@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './Goal.css';
-
+import { lendingData } from "../../assets/api/api"; 
 
 const Goal = () =>{
+
+    const[about, setAbout]=useState('');
+
+useEffect(() => {
+    const fetchData = async () => {
+        try {
+
+            const response = await lendingData.getAbout();
+            setAbout(response?.data?.about || "Default Title");
+        } catch (error) {
+            console.error("Error fetching title:", error);
+            setAbout("Default Title");
+        }
+    };
+
+    fetchData();
+}, []);
+
     return(
         <div className="goal">
             <div className="container">
@@ -11,7 +29,7 @@ const Goal = () =>{
                 <h2>Наша <br/>мета</h2>
             </div>
             <div className="goal-text">
-                <p>Підтримати - зробити донат для того, щоб 24-ма бригада мала можливість придбати потрібне авто для бійців. Ваші гроші обов’язково допоможуть воїнам бути більш підготовленими та здатними діяти ефективніше.</p>
+                <p>{about}</p>
                 </div>
             </div>
             </div>

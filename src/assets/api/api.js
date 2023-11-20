@@ -53,7 +53,7 @@ export const AdminApi = {
         return axios.delete(`/admin/title/${titleId}`);
     },
     deleteAdminAbout(aboutId) {
-        return axios.delete(`/admin/title/${aboutId}`);
+        return axios.delete(`/admin/about/${aboutId}`);
     }
 }
 export default { lendingData, AdminApi };
