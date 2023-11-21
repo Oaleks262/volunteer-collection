@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "https://volunteer-collection-api.onrender.com/";
+axios.defaults.baseURL = "https://volunteer-collection-api.onrender.com/api/";
 
 
 export const lendingData = {
