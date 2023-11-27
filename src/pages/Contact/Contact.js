@@ -6,7 +6,7 @@ const Contact = () =>{
 
 
     return(
-        <div className="contact-div">
+        <div id="contacts" className="contact-div">
             <div className="container">
                 <div className="content-contact">
                     <h3>Великі серця, готові допомагати та діяти - ось що визначає нашу команду волонтерів.<br/> 
