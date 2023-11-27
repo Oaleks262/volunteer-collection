@@ -29,7 +29,7 @@ const BurgerMain = () => {
           <img src={logo} alt="logo" />
           <div className="burger-navbar">
             <div className="burger-nav">
-            <a href="tel:+380938145293" target="_blank">Контакти</a>
+              <a href="/#contacts">Контакти</a>
               <a href="https://t.me/+HCcTIiF8PR1jZjBi" target="_black" >Наш Telegram</a>
             </div>
             <div className="burger-button">

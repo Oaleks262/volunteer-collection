@@ -38,7 +38,7 @@ const Header = () => {
           <img className="header-desktop-img" src={logo} alt="logo" />
           <div className="navbar">
             <div className="nav">
-            <a href="/#contacts">Контакти</a>
+              <a href="/#contacts">Контакти</a>
               <a href="https://t.me/+HCcTIiF8PR1jZjBi" target="_black" >Наш Telegram</a>
             </div>
             <div className="button-header">
