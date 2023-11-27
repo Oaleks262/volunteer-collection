@@ -8,7 +8,7 @@ import Make from "../../pages/Make/Make";
 import Share from "../../pages/Share/Share";
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-
+import Contact from '../../pages/Contact/Contact';
 
 
 
@@ -22,6 +22,7 @@ return(
         <About/>
         <Goal/>
         <Make/>
+        <Contact/>
         <Share/>
         <Footer/>
 

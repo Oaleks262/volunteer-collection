@@ -1,6 +1,5 @@
-
 import React from 'react';
-import {Router, Route, Routes, Navigate } from 'react-router-dom';
+import {Route, Routes, Navigate } from 'react-router-dom';
 import './assets/styles/App.css';
 import Main from './components/Main/Main';
 import Admin from './assets/admin/Admin';
