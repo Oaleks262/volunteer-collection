@@ -6,6 +6,7 @@ import menulogo from "../../assets/images/icon-menu.svg";
 import BurgerMain from "./BurgerMain";
 import { lendingData } from "../../assets/api/api"; 
 
+
 const Header = () => {
   const [menu, setMenu] = useState(false);
   const [bank, setBank] = useState('');
@@ -37,7 +38,7 @@ const Header = () => {
           <img className="header-desktop-img" src={logo} alt="logo" />
           <div className="navbar">
             <div className="nav">
-            <a href="#" target="_blank">Контакти</a>
+              <a href="/#contacts">Контакти</a>
               <a href="https://t.me/+HCcTIiF8PR1jZjBi" target="_black" >Наш Telegram</a>
             </div>
             <div className="button-header">
