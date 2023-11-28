@@ -25,7 +25,7 @@ const BurgerMain = () => {
     return( 
       <div className="burger-main">
         <div className="container">
-        <div className="burger-main-cont">
+        <div className="burger-main-cont"  id="exit">
           <img src={logo} alt="logo" />
           <div className="burger-navbar">
             <div className="burger-nav">

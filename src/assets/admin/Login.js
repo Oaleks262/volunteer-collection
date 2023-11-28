@@ -63,6 +63,8 @@ const Login = () => {
         <button className='loginbutton' type="submit" disabled={loading}>
           {loading ? 'Завантаження' : 'Вхід'} 
         </button>
+        <a className='exit' href='/#logo'>Сайт</a>
+          
       </form>
       {error && <div style={{ color: 'red' }}>{error.message}</div>}
     </div>
