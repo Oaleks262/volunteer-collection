@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "/api/";
+axios.defaults.baseURL = "https://volunteer-community.info/api/";
 
 
 export const lendingData = {
