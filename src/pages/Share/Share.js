@@ -3,7 +3,7 @@ import './Share.css';
 import iconbr from '../../assets/images/icon-arrow-br.svg';
 
 const Share = () => {
-    const shareURL = "https://volunteer-community.vercel.app/";
+    const shareURL = "https://volunteer-community.info/";
 
     const shareOnFacebook = () => {
         const facebookShareURL = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareURL)}`;
