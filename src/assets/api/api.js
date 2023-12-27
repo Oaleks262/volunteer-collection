@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "http://78.27.236.167:4444/api/";
+axios.defaults.baseURL = "/api/";
 
 
 export const lendingData = {
