@@ -4,26 +4,30 @@ import iconbr from '../../assets/images/icon-arrow-br.svg';
 
 const Share = () => {
     const shareURL = "https://volunteer-community.info/";
+const shareText = "Слава Україні!
+Підтримай 24-ї бригаду яка знаходиться у найзапекліших куточках нашої країни захищаючи нашу безпеку ризикуючи своїм життям.
+Ваша допомога  дозволить надати нашим військовим необхідне обладнання,забезпечити необхідні умови для успішного виконання важливих завдань.";
 
-    const shareOnFacebook = () => {
-        const facebookShareURL = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareURL)}`;
-        window.open(facebookShareURL, 'Поділитися на Facebook', 'width=600,height=400');
-    }
+const shareOnFacebook = () => {
+    const facebookShareURL = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareURL)}&quote=${encodeURIComponent(shareText)}`;
+    window.open(facebookShareURL, 'Поділитися на Facebook', 'width=600,height=400');
+};
 
-    const shareOnLinkedin = () => {
-        const linkedinShareURL = `https://www.linkedin.com/shareArticle?url=${encodeURIComponent(shareURL)}`;
-        window.open(linkedinShareURL, 'Поділитися на Linkedin', 'width=600,height=400');
-    }
+const shareOnLinkedin = () => {
+    const linkedinShareURL = `https://www.linkedin.com/shareArticle?url=${encodeURIComponent(shareURL)}&title=${encodeURIComponent(shareText)}`;
+    window.open(linkedinShareURL, 'Поділитися на Linkedin', 'width=600,height=400');
+};
 
-    const shareOnTelegram = () => {
-        const telegramShareURL = `https://t.me/share/url?url=${encodeURIComponent(shareURL)}`;
-        window.open(telegramShareURL, 'Поділитися на Telegram', 'width=600,height=400');
-    }
+const shareOnTelegram = () => {
+    const telegramShareURL = `https://t.me/share/url?url=${encodeURIComponent(shareURL)}&text=${encodeURIComponent(shareText)}`;
+    window.open(telegramShareURL, 'Поділитися на Telegram', 'width=600,height=400');
+};
 
-    const shareOnViber = () => {
-        const viberShareURL = `viber://forward?text=${encodeURIComponent(shareURL)}`;
-        window.location.href = viberShareURL;
-    }
+const shareOnViber = () => {
+    const viberShareURL = `viber://forward?text=${encodeURIComponent(shareText + " " + shareURL)}`;
+    window.location.href = viberShareURL;
+};
+
 
     return (
         <div className="share">
